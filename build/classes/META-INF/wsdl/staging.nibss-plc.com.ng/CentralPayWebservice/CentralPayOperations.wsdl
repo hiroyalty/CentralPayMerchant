@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://web.nibss.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="CentralPayOperations" targetNamespace="http://web.nibss.com/">
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://web.nibss.com/" elementFormDefault="unqualified" targetNamespace="http://web.nibss.com/" version="1.0">
+
+  <xs:element name="cancelMandate" type="tns:cancelMandate"/>
+
+  <xs:element name="cancelMandateResponse" type="tns:cancelMandateResponse"/>
+
+  <xs:element name="createMandateRequest" type="tns:createMandateRequest"/>
+
+  <xs:element name="createMandateRequestResponse" type="tns:createMandateRequestResponse"/>
+
+  <xs:element name="generateOTPRequest" type="tns:generateOTPRequest"/>
+
+  <xs:element name="generateOTPRequestResponse" type="tns:generateOTPRequestResponse"/>
+
+  <xs:element name="listActiveBanks" type="tns:listActiveBanks"/>
+
+  <xs:element name="listActiveBanksResponse" type="tns:listActiveBanksResponse"/>
+
+  <xs:element name="requeryMandate" type="tns:requeryMandate"/>
+
+  <xs:element name="requeryMandateResponse" type="tns:requeryMandateResponse"/>
+
+  <xs:element name="validateOTPRequest" type="tns:validateOTPRequest"/>
+
+  <xs:element name="validateOTPRequestResponse" type="tns:validateOTPRequestResponse"/>
+
+  <xs:complexType name="createMandateRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="createMandateRequestResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancelMandate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cancelMandateResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="validateOTPRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="validateOTPRequestResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="listActiveBanks">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="listActiveBanksResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="generateOTPRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="generateOTPRequestResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="requeryMandate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="requeryMandateResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="createMandateRequest">
+    <wsdl:part element="tns:createMandateRequest" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="generateOTPRequestResponse">
+    <wsdl:part element="tns:generateOTPRequestResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="requeryMandateResponse">
+    <wsdl:part element="tns:requeryMandateResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="cancelMandate">
+    <wsdl:part element="tns:cancelMandate" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="validateOTPRequestResponse">
+    <wsdl:part element="tns:validateOTPRequestResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="validateOTPRequest">
+    <wsdl:part element="tns:validateOTPRequest" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="listActiveBanks">
+    <wsdl:part element="tns:listActiveBanks" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="generateOTPRequest">
+    <wsdl:part element="tns:generateOTPRequest" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="cancelMandateResponse">
+    <wsdl:part element="tns:cancelMandateResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="createMandateRequestResponse">
+    <wsdl:part element="tns:createMandateRequestResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="listActiveBanksResponse">
+    <wsdl:part element="tns:listActiveBanksResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="requeryMandate">
+    <wsdl:part element="tns:requeryMandate" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="CentralPayOperations">
+    <wsdl:operation name="createMandateRequest">
+      <wsdl:input message="tns:createMandateRequest" name="createMandateRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:createMandateRequestResponse" name="createMandateRequestResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cancelMandate">
+      <wsdl:input message="tns:cancelMandate" name="cancelMandate">
+    </wsdl:input>
+      <wsdl:output message="tns:cancelMandateResponse" name="cancelMandateResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="validateOTPRequest">
+      <wsdl:input message="tns:validateOTPRequest" name="validateOTPRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:validateOTPRequestResponse" name="validateOTPRequestResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listActiveBanks">
+      <wsdl:input message="tns:listActiveBanks" name="listActiveBanks">
+    </wsdl:input>
+      <wsdl:output message="tns:listActiveBanksResponse" name="listActiveBanksResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="generateOTPRequest">
+      <wsdl:input message="tns:generateOTPRequest" name="generateOTPRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:generateOTPRequestResponse" name="generateOTPRequestResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requeryMandate">
+      <wsdl:input message="tns:requeryMandate" name="requeryMandate">
+    </wsdl:input>
+      <wsdl:output message="tns:requeryMandateResponse" name="requeryMandateResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CentralPayOperationsSoapBinding" type="tns:CentralPayOperations">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="createMandateRequest">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="createMandateRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="createMandateRequestResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cancelMandate">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="cancelMandate">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="cancelMandateResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="validateOTPRequest">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="validateOTPRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="validateOTPRequestResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="generateOTPRequest">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="generateOTPRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="generateOTPRequestResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listActiveBanks">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="listActiveBanks">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="listActiveBanksResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requeryMandate">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="requeryMandate">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="requeryMandateResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CentralPayOperations">
+    <wsdl:port binding="tns:CentralPayOperationsSoapBinding" name="CentralPayOperationsPort">
+      <soap:address location="http://Centralpaytest:443/CentralPayWebservice/CentralPayOperations"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
